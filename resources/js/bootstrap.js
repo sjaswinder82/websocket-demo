@@ -53,6 +53,6 @@ window.Pusher = Pusher;
      wsPort: 6001,
      wssPort:  6001,
      forceTLS: true,
-     enabledTransports: ['ws', 'wss'],
+     enabledTransports: ['ws', 'wss', 'xhr_streaming'],
  });
  

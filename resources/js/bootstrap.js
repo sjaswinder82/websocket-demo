@@ -48,11 +48,11 @@ window.Pusher = Pusher;
      broadcaster: 'pusher',
      key: import.meta.env.VITE_PUSHER_APP_KEY,
      cluster: import.meta.env.MIX_PUSHER_APP_CLUSTER,
-     wsHost: import.meta.env.VITE_PUSHER_HOST ?? `ws-${import.meta.env.VITE_PUSHER_APP_CLUSTER}.pusher.com`,
+     wsHost: window.location.hostname,
      disableStats: true,
      wsPort: 6001,
      wssPort:  6001,
-     forceTLS: true,
-     enabledTransports: ['ws', 'wss', 'xhr_streaming'],
+     forceTLS: false,
+     enabledTransports: ['ws', 'wss'],
  });
  

@@ -8,11 +8,10 @@ Alpine.start();
 
 import { createApp } from 'vue';
 
-// import ChatForm from './components/ChatForm'.de
-// import ChatMessages from './components/ChatMessages'
+import ChatForm from './components/ChatForm.vue';
+import ChatMessages from './components/ChatMessages.vue';
 
 const app = createApp({
-
     data() {
         return {
             messages: [],
@@ -89,7 +88,7 @@ const app = createApp({
     }
 });
 
-app.component('chat-form', import('./components/ChatForm.vue').default);
-app.component('chat-messages', import('./components/ChatMessages.vue').default);
+app.component('chat-form', ChatForm);
+app.component('chat-messages', ChatMessages);
 
 app.mount('#app');

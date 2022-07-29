@@ -37,7 +37,7 @@ return [
             'app_id' => env('PUSHER_APP_ID'),
             'port' => env('LARAVEL_WEBSOCKETS_PORT', 6001),
             'options' => [
-                'host' => env('PUSHER_HOST', 'api-'.env('PUSHER_APP_CLUSTER', 'mt1').'.pusher.com') ?: 'api-'.env('PUSHER_APP_CLUSTER', 'mt1').'.pusher.com',
+                'host' => '127.0.0.1',
                 'port' => env('PUSHER_PORT', 443),
                 'scheme' => env('PUSHER_SCHEME', 'https'),
                 'encrypted' => true,
